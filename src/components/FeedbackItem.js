@@ -1,21 +1,39 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/FeedbackItem.css'
+import FeedbackList from './FeedbackList'
 
-const FeedbackItem = () => {
+import {FaTimes} from 'react-icons/fa'
+import Card from '../shared/Card'
+
+const FeedbackItem = ({item, handleDelete}) => {
+
+    
+   
+    
+
+
   return (
     <>
 
 
-        <div className='card'>
-            <div className='num-display'> 10</div>
-            <div className='text-display'>This is an example of a feedback item</div>
+        <Card reverse = {true}>
+            <div className='num-display' >{item.rating}</div>
+            <button onClick = {() => handleDelete(item.id)} className='close'>
+
+                <FaTimes color = 'purple' />
+
+
+            </button>
+            <div className='text-display'>{item.text}</div>
+
+            
 
 
 
 
 
 
-        </div>
+        </Card>
     
     
     

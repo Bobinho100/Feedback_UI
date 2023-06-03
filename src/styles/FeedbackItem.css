@@ -1,6 +1,6 @@
 .card{
-    background-color: lightgreen;
-    padding: 30px;
+    background-color: white;
+    padding: 40px;
     /*width: 300px;*/
     margin: 10px;
     border-radius: 20px;
@@ -8,18 +8,24 @@
 }
 .num-display{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: -5px;
+    padding: 10px;
+    line-height: 1;
+    color: white;
 
 
     font-size: 24px;
-    border-radius: 10px;
+    border-radius: 30px;
 
     background-color:pink;
     font-weight:bold;
     
-    align-self: flex-start;
     margin-right: 10px;
     
     
+}
+
+.text-display{
+    text-align: center;
 }
