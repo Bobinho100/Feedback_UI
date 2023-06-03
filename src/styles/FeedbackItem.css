@@ -1,0 +1,25 @@
+.card{
+    background-color: lightgreen;
+    padding: 30px;
+    /*width: 300px;*/
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+.num-display{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    font-size: 24px;
+    border-radius: 10px;
+
+    background-color:pink;
+    font-weight:bold;
+    
+    align-self: flex-start;
+    margin-right: 10px;
+    
+    
+}
