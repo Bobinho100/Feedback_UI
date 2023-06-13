@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
+import '../styles/RatingSelect.css'
 
-const RatingSelect = () => {
+const RatingSelect = ({select}) => {
 
     const [selected,  setSelected] = useState(10)
 
     const handleChange = (e) => {
-        
+        setSelected(+e.currentTarget.value)
+        select(+e.currentTarget.value)
+
     }
 
 
