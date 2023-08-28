@@ -66,12 +66,12 @@ export const FeedbackProvider = ({children}) => {
         handleDeleteFeedback,
         addFeedback,
         editFeedback,
-<<<<<<< HEAD
+
         updateFeedback,
-=======
+
         updateFeedback
->>>>>>> de4b0af3e9ba81c1105ae78088773a82f7ed77ec
-       
+
+
 
     }}>{children}</FeedbackContext.Provider>
 
