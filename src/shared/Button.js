@@ -6,8 +6,8 @@ const Button = ({children, version, type, isDisabled}) => {
     <button type={type}  disabled = {isDisabled}
 
     className = {`btn btn-${version}`}
-    
-    
+
+
     >
 
 
@@ -16,13 +16,13 @@ const Button = ({children, version, type, isDisabled}) => {
   )
 }
 
-Button.defaultProps = {
+/*Button.defaultProps = {
     version:'primary',
     type: 'button',
     isDisabled:false
 
 
-}
+}*/
 
 
 
