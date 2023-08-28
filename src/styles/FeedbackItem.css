@@ -20,12 +20,30 @@
 
     background-color:pink;
     font-weight:bold;
-    
+
     margin-right: 10px;
-    
-    
+
+
 }
 
 .text-display{
     text-align: center;
+}
+.button-section {
+
+    position: absolute;
+    top: 10px; /* Adjust the top distance */
+    right: 10px; /* Adjust the right distance */
+    color: white;
+    padding: 5px 10px;
+
+
+
+
+
+
+
+}
+.close{
+    margin-right: 10px;
 }

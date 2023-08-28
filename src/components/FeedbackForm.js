@@ -20,7 +20,8 @@ const FeedbackForm = () => {
     const [message, setMessage] = useState('')
     const [rating, setRating] = useState(10)
 
-    const {addFeedback, feedbackEdit} = useContext(FeedbackContext)
+    //const {addFeedback, feedbackEdit} = useContext(FeedbackContext)
+    const {addFeedback, feedbackEdit, updateFeedback} = useContext(FeedbackContext)
 
     useEffect(() => {
         if (feedbackEdit.edit === true){
@@ -54,7 +55,14 @@ const FeedbackForm = () => {
                 text,
                 rating
             }
-            addFeedback(newFeedback)
+
+            if (feedbackEdit.edit === true){
+                updateFeedback(feedbackEdit.item.id, newFeedback)
+            }else{
+
+                addFeedback(newFeedback)
+
+            }
 
             settext('')
         }
@@ -70,28 +78,32 @@ const FeedbackForm = () => {
                 <div className='input-group'>
                     <input
                      value={text}
-                      type='text' 
-                      placeholder='Write a review'  
+                      type='text'
+                      placeholder='Write a review'
                       onChange={handleTextChange}
-                      
+
                       />
-                    <Button 
-                     type='submit'
-                     isDisabled={btnDisabled}
-                     
-                     
-                     >{`send`}</Button>
-    
+
+                        <button className={`button ${btnDisabled ? 'disabled': ''}`}
+                        type='submit'
+                        isDisabled={btnDisabled}
+
+
+                        >Send1</button>
+
+
+
+
 
                 </div>
                 {message && <div className='message'>{message}</div>}
             </form>
 
         </Card>
-    
-    
+
+
     </>
-    
+
   )
 }
 
